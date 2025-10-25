@@ -1,1 +1,60 @@
-
+[
+  {
+    "name": "2012 Dark Tea Liubao Tea Guangxi Wuzhou Liubao Tea Chenxiang Authentic Dark 250g",
+    "category": "Dark Tea",
+    "price": "$60.00",
+    "images": [
+      "assets/teas/5adark1.jpg",
+      "assets/teas/5adark2.jpg",
+      "assets/teas/5adark3.jpg"
+    ],
+    "description": "Packaging: Canned\nTea Type: Liubao DarkTea, DarkTea\nNet Content: 250g\nOrigin: Wuzhou City, Guangxi Province, Mainland China\nProduction Date: December 7, 2012\nBest Tasting Period: The longer the better\nFood Production License Number: SC11445040000026\nProduct Standard Number: GB/T 30353\nGrade: Special 5A\nPrice: US$60/piece\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural\n\nNatural Golden Flower, Corythuja scalyx Golden Flower, 18 Probiotics, 450 Beneficial Ingredients"
+  },
+  {
+    "name": "2024 Zongcha Anhua Dark Tea Ration Tea 1kg",
+    "category": "Dark Tea",
+    "price": "$95.00",
+    "images": [
+      "assets/teas/5aadark3.jpg",
+      "assets/teas/5aadark1.jpg",
+      "assets/teas/5aadark4.jpg",
+      "assets/teas/5aadark2.jpg"
+    ],
+    "description": "Packaging: Boxed\nTea Type: Anhua Dark Tea, Dark Tea\nNet Content: 1kg\nOrigin: Yiyang City, Hunan Province, Mainland China\nProduction Date: March 1, 2024\nBest Tasting Period: The Longer the Better\nFood Production License Number: SC11443092300238\nProduct Standard Number: See Outer Packaging\nGrade: Special 5A\nPrice: US$95/piece\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural\n\nNatural Golden Flower, Corythuja scalyx Golden Flower, 18 Probiotics, 450 Beneficial Ingredients"
+  },
+  {
+    "name": "2016 Genuine Anhua Dark Tea Healthy Tea for Weight Loss and Health 1kg",
+    "category": "Dark Tea",
+    "price": "$90.00",
+    "images": [
+      "assets/teas/5aaadark4.jpg",
+      "assets/teas/5aaadark3.jpg",
+      "assets/teas/5aaadark2.jpg",
+      "assets/teas/5aaadark1.jpg"
+    ],
+    "description": "Packaging: Boxed\nTea Type: Anhua Dark Tea, Dark Tea\nNet Content: 1kg\nOrigin: Yiyang City, Hunan Province, Mainland China\nProduction Date: October 6, 2016\nBest Tasting Period: The Longer the Better\nFood Production License Number: SC11443092300551\nProduct Standard Number: DB43/T569-2010\nGrade: Special 5A\nPrice: USD 90/piece\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNatural Golden Flower, Eurotium Coronoides Golden Flower, 18 Probiotics, 450 Beneficial Ingredients\n\nNo preservatives or flavors added, pure natural"
+  },
+  {
+    "name": "2016 Authentic Anhua Dark Tea Health Tea Weight Loss Healthy Portable Package 350g",
+    "category": "Dark Tea",
+    "price": "$55.00",
+    "images": [
+      "assets/teas/6adark3.jpg",
+      "assets/teas/6adark1.jpg",
+      "assets/teas/6adark2.jpg"
+    ],
+    "description": "Packaging: Canned\nTea Type: Anhua Dark Tea, Dark Tea\nNet Content: 350g\nOrigin: Yiyang City, Hunan Province, Mainland China\nProduction Date: October 6, 2016\nBest Tasting Period: The Longer the Better\nFood Production License Number: SC11443092300551\nProduct Standard Number: DB43/T569-2010\nGrade: Special 6A\nPrice: USD 55/piece\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNatural Golden Flower, Corythuja scalyx Golden Flower, 18 Probiotics, 450 Beneficial Ingredients\n\nNo preservatives or flavors added, pure natural"
+  },
+  {
+    "name": "2023 5A Zongcha, High-Flavor Tea, Dark Tea 1kg",
+    "category": "Dark Tea",
+    "price": "$90.00",
+    "images": [
+      "assets/teas/5azdark1.jpg",
+      "assets/teas/5azdark3.jpg",
+      "assets/teas/5azdark2.jpg",
+      "assets/teas/5azdark4.jpg"
+    ],
+    "description": "Packaging: Bamboo basket\nTea type: Anhua black tea, black tea\nNet content: 1kg\nOrigin: Yiyang City, Hunan Province, Mainland China\nProduction date: June 24, 2023\nBest tasting period: The longer the better\nFood production license number: SC11443092300551\nProduct standard number: DB43/T569-2010\nGrade: Special 5A\nPrice: US$90/piece\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNatural golden flower, crown golden flower mushroom, 18 probiotics, 450 beneficial ingredients\n\nNo preservatives or flavors added, pure natural"
+  }
+]
