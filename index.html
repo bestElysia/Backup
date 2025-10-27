@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ChinaFamousTea — Products</title>
+<meta name="description" content="Share your feedback about ChinaFamousTea — Premium Chinese Teas." />
+
+<!-- ✅ 网站商标 favicon -->
+<link rel="icon" href="assets/teanetwork.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/teanetwork.png" />
+
+<!-- ✅ Open Graph 分享信息（微信 / 微博 / Facebook / LinkedIn） -->
+<meta property="og:title" content="ChinaFamousTea — Feedback" />
+<meta property="og:description" content="Share your feedback about ChinaFamousTea — Premium Chinese Teas." />
+<meta property="og:image" content="https://chinafamoustea11.uk/assets/teashare.png" />
+<meta property="og:url" content="https://chinafamoustea11.uk/product" />
+<meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter 分享卡片 -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ChinaFamousTea — Product" />
+<meta name="twitter:description" content="Share your product about ChinaFamousTea — Premium Chinese Teas." />
+<meta name="twitter:image" content="https://chinafamoustea11.uk/assets/teashare.png" />
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- PayPal SDK (replace YOUR_CLIENT_ID with your actual PayPal client ID) -->
+<script src="https://www.paypal.com/sdk/js?client-id=Aegx39QGJNAw90iSaFMzVmyewHPkYNro2RedvuTcBbE9_ycmQxEIdI0YJgDHa7b8XwG_sMwiqKvH2ZVB&currency=USD"></script>
+<style>
+:root{
+  --accent: #1b5e20;
+  --accent-2: #43a047;
+  --glass-bg: rgba(230,255,230,0.32);
+  --glass-border: rgba(255,255,255,0.48);
+  --text:#123822;
+  --side-w:220px;
+  --glass-strong: rgba(255,255,255,0.28);
+  --text-dark: #0d3320;
+  --radius: 18px;
+  --transition: 0.32s cubic-bezier(.2,.9,.2,1);
+  --glow-size: 2.5px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter, "Poppins", system-ui, -apple-system;
+  background: linear-gradient(135deg,#eaf8ef,#ffffff);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  overflow-x:hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container{ max-width:1300px; margin: 0 auto; padding:100px 20px 60px; flex: 1; }
+
+/* Rainbow glow */
+.rainbow-rim {
+  position: relative;
+  isolation: isolate;
+}
+.rainbow-rim::before{
+  content:"";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: var(--glow-size);
+  background: conic-gradient(
+    from 180deg,
+    rgba(255,200,180,0.12),
+    rgba(255,220,180,0.12),
+    rgba(255,255,200,0.12),
+    rgba(200,255,220,0.12),
+    rgba(180,220,255,0.12),
+    rgba(220,180,255,0.12),
+    rgba(255,180,220,0.12),
+    rgba(255,200,180,0.12)
+  );
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.65;
+  pointer-events:none;
+  filter: blur(6px) saturate(1.2);
+  transform: translateZ(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1;
+}
+@media (max-width:600px){
+  .rainbow-rim::before{ opacity:0.45; filter: blur(5px); }
+}
+
+/* Hamburger */
+.hamburger{
+  position: fixed; left:18px; top:18px;
+  width:52px;height:52px;border-radius:14px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6));
+  border:1px solid var(--glass-border);
+  backdrop-filter: blur(16px) saturate(1.4);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.18), inset 0 1px 8px rgba(255,255,255,0.6);
+  cursor:pointer; z-index:1400;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.hamburger:hover{ transform: scale(1.06); box-shadow: 0 20px 55px rgba(0,0,0,0.22); }
+.hamburger .bar{ width:22px; height:2px; background:var(--accent); border-radius:2px; box-shadow:0 6px 0 0 var(--accent),0 -6px 0 0 var(--accent); }
+
+/* Side nav */
+.side-nav{
+  position: fixed; left:20px; top:88px;
+  width: var(--side-w);
+  border-radius: var(--radius);
+  padding:16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+  border:1px solid var(--glass-border);
+  backdrop-filter: blur(20px) saturate(1.6);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.18), inset 0 1px 10px rgba(255,255,255,0.25);
+  transform: translateY(36px) scale(0.96);
+  opacity:0; pointer-events:none;
+  transition: transform 0.6s cubic-bezier(.22,1,.36,1), opacity .36s ease;
+  z-index:1350;
+}
+.side-nav.rainbow-rim{ overflow: visible; }
+.side-nav.open{
+  opacity:1; pointer-events:auto;
+  animation: dockPop 0.62s cubic-bezier(.22,.9,.36,1) forwards;
+}
+@keyframes dockPop{
+  0%{ transform: translateY(36px) scale(.96); filter: brightness(.92); }
+  55%{ transform: translateY(-10px) scale(1.08); filter: brightness(1.12); }
+  100%{ transform: translateY(0) scale(1); filter: brightness(1); }
+}
+
+/* Nav items */
+.side-nav .nav-item,
+.side-nav .product-toggle{
+  display:block;padding:12px 14px;border-radius:12px;
+  color:var(--text-dark);font-weight:600;font-size:15px;text-decoration:none;
+  margin-bottom:8px; background: rgba(255,255,255,0.06);
+  transition: transform .22s ease, box-shadow .22s ease, color .18s ease;
+}
+.side-nav .nav-item:hover,
+.side-nav .product-toggle:hover{
+  transform: translateX(8px);
+  color: var(--accent);
+  background: rgba(255,255,255,0.34);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+}
+
+/* Subnav */
+.sub-nav{ display:none; margin-left:6px; }
+.sub-nav .nav-sub-item{
+  display:block;padding:8px 8px 8px 22px;border-radius:10px;color:var(--text-dark);
+  text-decoration:none;font-weight:500;font-size:14px;margin-bottom:6px;
+  transition: transform .18s ease, background .18s ease, color .18s;
+}
+.sub-nav .nav-sub-item:hover{ transform: translateX(6px); color:var(--accent); background: rgba(255,255,255,0.18); }
+
+/* Cart Button */
+.cart-button {
+  position: fixed; right: 14px; top: 14px;
+  width:52px;height:52px;border-radius:14px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.75), rgba(255,255,255,0.45));
+  backdrop-filter: blur(14px) saturate(1.4);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(20,80,40,0.16), inset 0 1px 3px rgba(255,255,255,0.4);
+  z-index:1400; cursor:pointer;
+  border:1px solid rgba(255,255,255,0.45);
+  transition: all .25s ease;
+}
+.cart-button:hover { transform: scale(1.08); background: rgba(255,255,255,0.82); }
+.cart-button.added {
+  animation: bounce 0.6s ease-out;
+}
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+.cart-icon {
+  font-size: 24px;
+  color: var(--accent);
+}
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--accent-2);
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  min-width: 20px;
+  text-align: center;
+  display: none; /* Hidden if 0 */
+}
+
+.aliexpress-button {
+  background: var(--accent-2);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  transition: all .25s ease;
+  width: 100%;
+  box-sizing: border-box;
+  height: 44px;
+  line-height: 24px;
+  font-family: inherit;
+}
+.aliexpress-button:hover {
+  background: #2e7d32;
+  transform: translateY(-2px);
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  backdrop-filter: blur(12px) saturate(1.4);
+  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .3s ease;
+  z-index: 1500;
+  color: var(--accent);
+  font-weight: 600;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.toast .check {
+  font-size: 20px;
+}
+
+/* Container */
+/* .container already defined above */
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* 手机：调整间隙和最小宽度 */
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 18px;
+  }
+}
+
+/* 超小屏：单列，增加间隙以改善触控体验 */
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+}
+
+.product-card{
+  background:var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:14px;
+  backdrop-filter: blur(12px) saturate(1.4);
+  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+  overflow:hidden;
+  transition: all .3s ease;
+  cursor:pointer;
+  will-change: transform, box-shadow; /* Improve smoothness */
+}
+.product-card:hover{transform:translateY(-6px) scale(1.03); box-shadow:0 14px 32px rgba(0,0,0,0.12);}
+
+/* Product Card Image and Info */
+.product-card img{
+  width:100%;height:auto;aspect-ratio: 4/3;object-fit:cover;display:block;
+  transition: transform .3s ease;
+}
+.product-card:hover img { transform: scale(1.05); }
+.product-card .info{
+  padding:12px 14px;
+}
+.product-card h3{font-size:17px;color:var(--accent);margin-bottom:6px;}
+.product-card p{font-size:14px;color:#4a7556;margin-bottom:10px;}
+.product-card button{
+  background:var(--accent-2);color:#fff;border:none;border-radius:8px;
+  padding:8px 14px;font-size:14px;cursor:pointer;
+  transition:all .25s ease, color 0.3s ease;
+  position: relative;
+}
+.product-card button:hover{background:#2e7d32; transform: translateY(-2px);}
+
+/* Product Modal */
+.modal{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.4);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:all .3s ease;z-index:2000;
+  will-change: opacity; /* Improve smoothness */
+}
+.modal.open{opacity:1;pointer-events:auto;}
+.modal-content{
+  background:rgba(255,255,255,0.8);
+  backdrop-filter:blur(16px);
+  border-radius:14px;
+  padding:24px;
+  max-width:640px;width:90%;
+  box-shadow:0 14px 36px rgba(0,0,0,0.2);
+  position:relative;
+  transform: scale(0.95);
+  transition: transform .3s ease;
+  max-height: 80vh; /* Limit height */
+  overflow-y: auto; /* Enable scrolling */
+  will-change: transform; /* Improve smoothness */
+}
+.modal.open .modal-content { transform: scale(1); }
+.modal-content .image-container {
+  position: relative;
+}
+.modal-content img{width:100%;border-radius:10px;margin-bottom:14px; transition: opacity .3s ease;}
+.modal-content .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s ease;
+}
+.modal-content .arrow:hover { background: rgba(255,255,255,0.9); }
+.modal-content .arrow-left { left: 10px; }
+.modal-content .arrow-right { right: 10px; }
+.modal-content h2{color:var(--accent);margin-bottom:10px;}
+.modal-content p{color:#3c5c45;margin-bottom:10px;font-size:15px; white-space: pre-line;}
+.modal-content .close{
+  position:absolute;top:10px;right:14px;
+  font-size:22px;cursor:pointer;color:var(--accent);
+}
+.modal-content button{
+  background:var(--accent-2);color:#fff;border:none;border-radius:8px;
+  padding:10px 18px;font-size:15px;cursor:pointer;
+  transition:all .25s ease, color 0.3s ease;
+  position: relative;
+}
+.modal-content button:hover{background:#2e7d32; transform: translateY(-2px);}
+
+/* Cart Overlay and Modal - Optimized for smoother macOS Dock-like animation with enhanced liquid glass effect */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+  z-index: 1300;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 80px;
+  will-change: opacity; /* Improve smoothness */
+}
+.cart-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cart-modal {
+  background: linear-gradient(160deg, rgba(255,255,255,0.75), rgba(255,255,255,0.5)); /* Enhanced gradient for more liquid feel */
+  border-radius:14px; 
+  padding:20px; 
+  backdrop-filter: blur(20px) saturate(1.8); /* Increased blur and saturation for stronger glass effect */
+  border:1px solid rgba(255,255,255,0.6); /* Slightly stronger border */
+  box-shadow:0 16px 40px rgba(0,0,0,0.12), inset 0 1px 2px rgba(255,255,255,0.5), inset 0 -1px 2px rgba(255,255,255,0.4); /* Added inset shadows for depth */
+  width: 360px;
+  max-height: 80vh;
+  overflow-y: auto;
+  opacity:0;
+  transform: scale(0.85) translateX(60%);
+  transition: opacity 0.4s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), backdrop-filter 0.4s ease; /* Added transition to backdrop-filter for liquid animation */
+  will-change: transform, opacity, backdrop-filter; /* Improve smoothness with backdrop-filter */
+}
+.cart-overlay.open .cart-modal {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  animation: dockBounce 0.8s ease-out;
+  backdrop-filter: blur(24px) saturate(2); /* Animate to even stronger effect on open */
+}
+.cart-modal .title {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.cart-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+/* Cart Items */
+.cart-list {
+  display: grid;
+  gap: 12px;
+}
+.cart-item{
+  background:var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:14px;
+  backdrop-filter: blur(12px) saturate(1.4);
+  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+  padding:12px;
+  display:flex;
+  align-items:center;
+  transition: all .25s ease;
+  will-change: transform; /* Improve smoothness */
+}
+.cart-item:hover{transform:translateY(-4px);}
+.cart-item img{
+  width:50px;height:50px;object-fit:cover;border-radius:10px;margin-right:12px;
+}
+.cart-item .details{
+  flex:1;
+}
+.cart-item .name{font-size:15px;color:var(--accent);font-weight:600;}
+.cart-item .price{color:#4a7556;font-size:13px;}
+.remove{
+  background:var(--accent-2);color:#fff;border:none;border-radius:8px;
+  padding:4px 10px;font-size:13px;cursor:pointer;
+  transition:background .25s ease;
+}
+.remove:hover{background:#2e7d32;}
+
+/* Total */
+.total{
+  text-align:right;
+  font-size:18px;
+  color:var(--accent);
+  margin:16px 0;
+  padding:8px;
+  background:rgba(255,255,255,0.2);
+  border-radius:10px;
+}
+
+/* Checkout Form */
+.checkout-form{
+  display:grid;
+  gap:10px;
+}
+.checkout-form input{
+  background:rgba(255,255,255,0.6);
+  border:1px solid var(--glass-border);
+  border-radius:10px;
+  padding:10px 14px;
+  font-size:14px;
+  color:var(--text);
+  backdrop-filter: blur(8px);
+  transition:all .2s;
+}
+.checkout-form input:focus{
+  outline:none;
+  border-color:var(--accent-2);
+  box-shadow:0 0 0 3px rgba(67,160,71,0.2);
+}
+.checkout-form button{
+  background:var(--accent-2);color:#fff;border:none;border-radius:10px;
+  padding:10px;font-size:15px;cursor:pointer;
+  transition:all .25s ease;
+}
+.checkout-form button:hover{background:#2e7d32;transform:translateY(-2px);}
+
+.submit-button {
+  background: var(--accent-2);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all .25s ease;
+}
+.submit-button:hover {
+  background: #2e7d32;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: rgba(20, 60, 35, 0.9);
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto 2rem;
+  border-radius: 16px;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.35) 80%);
+  backdrop-filter: blur(20px) saturate(180%) brightness(1.05);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  max-width: 900px;
+}
+.footer:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(255, 255, 255, 0.45);
+}
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Category Title Enhancements */
+#categoryTitle {
+  text-align: center;
+  font-size: 2.5em; /* Larger font size */
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 30px; /* Added spacing */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+</style>
+</head>
+<body>
+
+<!-- Hamburger -->
+<div id="hamburger" class="hamburger" aria-label="Toggle Menu"><div class="bar"></div></div>
+
+<!-- cart button -->
+<div id="cartButton" class="cart-button" title="Shopping Cart">
+  <span class="cart-icon">🛒</span>
+  <span id="cartBadge" class="cart-badge">0</span>
+</div>
+
+<!-- Side Nav -->
+<nav id="sideNav" class="side-nav rainbow-rim" aria-hidden="true">
+  <a href="index.html" class="nav-item">Home</a>
+  <div class="product-toggle" id="productToggle">Products</div>
+  <div id="productCategories" class="sub-nav" aria-hidden="true">
+    <a href="product.html?cat=Green Tea" class="nav-sub-item">Green Tea</a>
+    <a href="product.html?cat=Black Tea" class="nav-sub-item">Black Tea</a>
+    <a href="product.html?cat=Oolong Tea" class="nav-sub-item">Oolong Tea</a>
+    <a href="product.html?cat=White Tea" class="nav-sub-item">White Tea</a>
+    <a href="product.html?cat=Pu-erh Tea" class="nav-sub-item">Pu-erh Tea</a>
+    <a href="product.html?cat=Yellow Tea" class="nav-sub-item">Yellow Tea</a>
+    <a href="product.html?cat=Herbal Tea" class="nav-sub-item">Herbal Tea</a>
+    <a href="product.html?cat=Dark Tea" class="nav-sub-item">Dark Tea</a>
+  </div>
+  <a href="about.html" class="nav-item">About Us</a>
+  <a href="feedback.html" class="nav-item">Feedback</a>
+</nav>
+
+<div class="container">
+  <div class="title" id="categoryTitle"></div>
+  <div class="products" id="productGrid"></div>
+</div>
+
+<!-- product modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">×</span>
+    <div class="image-container">
+      <img id="modalImg" src="">
+      <button class="arrow arrow-left" id="prevImg">&lt;</button>
+      <button class="arrow arrow-right" id="nextImg">&gt;</button>
+    </div>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <p><strong>Price:</strong> $<span id="modalPrice"></span></p>
+    <button id="addToCartBtn">Add to Cart</button>
+  </div>
+</div>
+
+<!-- cart overlay -->
+<div id="cartOverlay" class="cart-overlay">
+  <div id="cartModal" class="cart-modal">
+    <span class="close-cart" id="closeCart">×</span>
+    <div class="title">Your Cart</div>
+    <div id="cartList" class="cart-list"></div>
+    <div class="total" id="totalPrice">Total: $0</div>
+
+    <form id="checkoutForm" class="checkout-form">
+      <input type="text" name="full_name" placeholder="Full Name" required>
+      <input type="text" name="shipping_address" placeholder="Shipping Address" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <div id="paypal-button-container"></div> <!-- PayPal button container -->
+      <a href="https://www.aliexpress.com" target="_blank" class="aliexpress-button">Pay with AliExpress</a> <!-- AliExpress link (replace with actual payment link if needed) -->
+    </form>
+  </div>
+</div>
+
+<!-- toast notification -->
+<div id="toast" class="toast">
+  <span class="check">✅</span>
+  <span id="toastMessage"></span>
+</div>
+
+<footer class="footer">
+        © CHINAFAMOUSTEA.COM Beijing ICP No. 11001839-1 Beijing Public Security Network No. 11000002000025
+    </footer>
+
+<script>
+// Initialize EmailJS with public key
+(function(){
+  emailjs.init("MNg9Kb-x2HFOvW2-i");
+})();
+
+/* === Hamburger menu === */
+const hamburger = document.getElementById('hamburger');
+const sideNav = document.getElementById('sideNav');
+let navOpen = false;
+
+hamburger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  navOpen = !navOpen;
+  sideNav.classList.toggle('open', navOpen);
+  hamburger.style.transform = navOpen ? 'scale(1.02) translateY(-2px)' : 'scale(1)';
+});
+
+/* close when clicking outside */
+document.addEventListener('click', (e) => {
+  if (!navOpen) return;
+  if (!sideNav.contains(e.target) && !hamburger.contains(e.target)) {
+    navOpen = false;
+    sideNav.classList.remove('open');
+    hamburger.style.transform = 'scale(1)';
+  }
+});
+
+/* product categories toggle */
+const productToggle = document.getElementById('productToggle');
+const productCategories = document.getElementById('productCategories');
+let catOpen = false;
+productToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  catOpen = !catOpen;
+  productCategories.style.display = catOpen ? 'block' : 'none';
+  productCategories.setAttribute('aria-hidden', (!catOpen).toString());
+});
+
+/* === Products === */
+// Get category from URL
+const params = new URLSearchParams(window.location.search);
+const cat = params.get('cat') || 'Tea';
+document.getElementById('categoryTitle').textContent = cat + ' Collection';
+
+const productGrid = document.getElementById('productGrid');
+
+// 使用 fetch 请求加载 products.json 数据
+fetch('products.json') // 更新为实际的 JSON 文件路径
+  .then(response => response.json())
+  .then(data => {
+    // 添加过滤：只显示匹配 category 的产品
+    const filteredData = data.filter(product => product.category === cat);
+    filteredData.forEach(product => {
+      const card = document.createElement('div');
+      card.className = 'product-card';
+      // 使用 images[0] 如果是数组，否则用 image（兼容旧JSON）
+      const previewImage = Array.isArray(product.images) ? product.images[0] : product.image;
+      card.innerHTML = `
+        <img src="${previewImage}" alt="${product.name}">
+        <div class="info">
+          <h3>${product.name}</h3>
+          <p>${product.price}</p>
+          <button>Add to Cart</button>
+        </div>`;
+      productGrid.appendChild(card);
+
+      card.querySelector('button').addEventListener('click', (e) => {
+        e.stopPropagation();
+        addToCart(product, e.currentTarget);
+      });
+
+      card.addEventListener('click', () => openModal(product));
+    });
+  })
+  .catch(error => {
+    console.error('Error loading products:', error);
+  });
+
+/* === Product Modal === */
+const modal=document.getElementById('modal');
+const closeModal=document.getElementById('closeModal');
+const modalImg=document.getElementById('modalImg');
+const modalTitle=document.getElementById('modalTitle');
+const modalDesc=document.getElementById('modalDesc');
+const modalPrice=document.getElementById('modalPrice');
+const addToCartBtn=document.getElementById('addToCartBtn');
+const prevImg = document.getElementById('prevImg');
+const nextImg = document.getElementById('nextImg');
+let currentProduct=null;
+let currentImageIndex = 0;
+let productImages = []; // 添加全局数组用于模态图像
+
+function openModal(p){
+  currentProduct=p;
+  // 支持 images 数组，如果是单一 image 则包装成数组（兼容旧JSON）
+  productImages = Array.isArray(p.images) ? p.images : [p.image];
+  currentImageIndex = 0;
+  updateModalImage();
+  modalTitle.textContent=p.name;
+  modalDesc.textContent=p.description;
+  modalPrice.textContent=p.price.replace('$', ''); // 移除$符号，如果需要
+  modal.classList.add('open');
+}
+
+function updateModalImage() {
+  modalImg.src = productImages[currentImageIndex];
+}
+
+prevImg.onclick = () => {
+  currentImageIndex = (currentImageIndex - 1 + productImages.length) % productImages.length;
+  updateModalImage();
+};
+
+nextImg.onclick = () => {
+  currentImageIndex = (currentImageIndex + 1) % productImages.length;
+  updateModalImage();
+};
+
+closeModal.onclick=()=>modal.classList.remove('open');
+modal.onclick=(e)=>{ if(e.target===modal) modal.classList.remove('open'); };
+addToCartBtn.onclick=()=>{ 
+  addToCart(currentProduct, addToCartBtn); 
+  modal.classList.remove('open'); 
+};
+
+/* === Cart Functions === */
+const cartButton = document.getElementById('cartButton');
+const cartBadge = document.getElementById('cartBadge');
+const cartOverlay = document.getElementById('cartOverlay');
+const cartModal = document.getElementById('cartModal');
+const closeCart = document.getElementById('closeCart');
+const cartList = document.getElementById('cartList');
+const totalPriceEl = document.getElementById('totalPrice');
+const checkoutForm = document.getElementById('checkoutForm');
+const toast = document.getElementById('toast');
+const toastMessage = document.getElementById('toastMessage');
+let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+let cartOpen = false;
+
+function updateCartBadge() {
+  const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+  cartBadge.textContent = totalItems;
+  cartBadge.style.display = totalItems > 0 ? 'block' : 'none';
+}
+
+function renderCart() {
+  cartList.innerHTML = '';
+  let itemsTotal = 0;
+  cart.forEach((item, i) => {
+    const itemPrice = parseFloat(item.price.replace('$', ''));
+    const itemSubtotal = itemPrice * item.qty;
+    itemsTotal += itemSubtotal;
+    const div = document.createElement('div');
+    div.className = 'cart-item';
+    div.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <div class="details">
+        <div class="name">${item.name} x ${item.qty}</div>
+        <div class="price">$${itemSubtotal.toFixed(2)}</div>
+      </div>
+      <button class="remove" data-i="${i}">Remove</button>
+    `;
+    cartList.appendChild(div);
+  });
+  const shipping = 5.00;
+  const total = itemsTotal + shipping;
+  totalPriceEl.innerHTML = `
+    Subtotal: $${itemsTotal.toFixed(2)}<br>
+    Freight: $${shipping.toFixed(2)}<br>
+    Total: $${total.toFixed(2)}
+  `;
+  localStorage.setItem('cart', JSON.stringify(cart));
+  return { itemsTotal, shipping, total }; // Return totals for payment and email
+}
+
+function showToast(message) {
+  toastMessage.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3000);
+}
+
+function addToCart(item, buttonElem){
+  const previewImage = Array.isArray(item.images) ? item.images[0] : item.image;
+  const exist = cart.find(i => i.name === item.name);
+  if (exist) exist.qty += 1; else cart.push({...item, image: previewImage, qty:1});
+  updateCartBadge();
+  renderCart(); // Update cart modal if open
+  showToast('Added to cart!');
+}
+
+// Cart Button Click
+cartButton.addEventListener('click', (e) => {
+  e.stopPropagation();
+  cartOpen = !cartOpen;
+  cartOverlay.classList.toggle('open', cartOpen);
+});
+
+// Close Cart
+closeCart.onclick = () => {
+  cartOpen = false;
+  cartOverlay.classList.remove('open');
+};
+cartOverlay.onclick = (e) => {
+  if (e.target === cartOverlay) {
+    cartOpen = false;
+    cartOverlay.classList.remove('open');
+  }
+};
+
+// Remove Item
+cartList.addEventListener('click', e => {
+  if (e.target.classList.contains('remove')) {
+    e.stopPropagation();
+    const i = parseInt(e.target.dataset.i);
+    cart.splice(i, 1);
+    renderCart();
+    updateCartBadge();
+  }
+});
+
+// AliExpress button style fix
+const aliexpressButton = document.querySelector('.aliexpress-button');
+// === AliExpress 支付：发送邮件并跳转 ===
+if (aliexpressButton) {
+  aliexpressButton.addEventListener('click', function (e) {
+    e.preventDefault(); // 阻止默认跳转
+
+    if (cart.length === 0) {
+      alert("🛒 Your shopping cart is empty and you cannot submit your order.");
+      return;
+    }
+
+    // 生成订单编号
+    const orderId = 'ORD-' + new Date().toISOString().slice(0,10).replace(/-/g,'') + '-' + Math.floor(Math.random()*1000000);
+
+    // 生成 issue_date
+    const issueDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+    // 获取 totals
+    const totals = renderCart();
+
+    // 构建 order_items 数组
+    const orderItems = cart.map(item => ({
+      name: item.name,
+      qty: item.qty,
+      unit_price: parseFloat(item.price.replace('$', '')).toFixed(2),
+      subtotal: (parseFloat(item.price.replace('$', '')) * item.qty).toFixed(2)
+    }));
+
+    // 构建 EmailJS 参数对象
+    const params = {
+      full_name: checkoutForm.full_name.value,
+      shipping_address: checkoutForm.shipping_address.value,
+      email: checkoutForm.email.value,
+      phone: checkoutForm.phone.value,
+      order_id: orderId,
+      issue_date: issueDate,
+      order_items: orderItems,
+      subtotal: totals.itemsTotal.toFixed(2),
+      tax: '0.00', // 假设税为0，如果有税请调整
+      total: totals.total.toFixed(2)
+    };
+
+    // 发送邮件
+    emailjs.send('service_wzclz7o', 'template_1m9bpml', params)
+      .then(() => {
+        alert('✅ The order has been submitted successfully! About to jump to WhatsApp。');
+
+        // 清空购物车
+        localStorage.removeItem('cart');
+        cart = [];
+        renderCart();
+        updateCartBadge();
+
+        // 🚀 跳转到 WhatsApp（换成你自己的号码）
+        window.location.href = "https://wa.me/8615859508988?text=Hello! I just placed an order (order number：" + orderId + "）";
+      })
+      .catch((error) => {
+        alert('❌ 邮件发送失败，请稍后再试。');
+        console.error('EmailJS error:', error);
+      });
+  });
+}
+
+// PayPal Integration (pre-reserved interface)
+paypal.Buttons({
+  style: {
+    layout: 'vertical',
+    color: 'gold',
+    shape: 'rect',
+    label: 'paypal'
+  },
+  createOrder: function(data, actions) {
+    const totals = renderCart(); // Get totals from cart
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: totals.total.toString() // Total amount including shipping
+        }
+      }]
+    });
+  },
+  onApprove: function(data, actions) {
+    return actions.order.capture().then(function(details) {
+      // 生成订单编号
+      const orderId = 'ORD-' + new Date().toISOString().slice(0,10).replace(/-/g,'') + '-' + Math.floor(Math.random()*1000000);
+
+      // 生成 issue_date
+      const issueDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+      // 获取 totals
+      const totals = renderCart();
+
+      // 构建 order_items 数组
+      const orderItems = cart.map(item => ({
+        name: item.name,
+        qty: item.qty,
+        unit_price: parseFloat(item.price.replace('$', '')).toFixed(2),
+        subtotal: (parseFloat(item.price.replace('$', '')) * item.qty).toFixed(2)
+      }));
+
+      // 构建 EmailJS 参数对象
+      const params = {
+        full_name: checkoutForm.full_name.value,
+        shipping_address: checkoutForm.shipping_address.value,
+        email: checkoutForm.email.value,
+        phone: checkoutForm.phone.value,
+        order_id: orderId,
+        issue_date: issueDate,
+        order_items: orderItems,
+        subtotal: totals.itemsTotal.toFixed(2),
+        tax: '0.00', // 假设税为0，如果有税请调整
+        total: totals.total.toFixed(2),
+        payment_id: details.id // 可选：包括 PayPal 支付 ID
+      };
+
+      // 发送邮件
+      emailjs.send('service_wzclz7o', 'template_1m9bpml', params)
+        .then(() => {
+          alert('✅ Payment successful and order submitted! Thank you for shopping! Confirmation email sent.');
+          localStorage.removeItem('cart');
+          cart = [];
+          renderCart();
+          updateCartBadge();
+          cartOverlay.classList.remove('open');
+          cartOpen = false;
+        }, (error) => {
+          alert('Payment successful, but failed to send order confirmation. Please contact support.');
+          console.error('EmailJS error:', error);
+        });
+    });
+  },
+  onError: function (err) {
+    alert('Payment error. Please try again.');
+    console.error('PayPal error:', err);
+  }
+}).render('#paypal-button-container');
+
+// Initial update
+updateCartBadge();
+renderCart();
+
+</script>
+  
+  <script>
+// 禁止右键菜单
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+// 禁止常见开发者快捷键（静默版）
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' || 
+    (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+    (e.ctrlKey && ['U', 'S'].includes(e.key.toUpperCase()))
+  ) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}, true);
+</script>
+  
+</body>
+</html>
