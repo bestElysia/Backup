@@ -1,308 +1,101 @@
 [
   {
-    "name": "2020 6A Yunnan Xiaolongzhu Pu'er Raw Tea First Spring 1kg",
-    "category": "Pu'er Tea",
-    "price": "$120.00",
+    "name": "2025 7A Osmanthus Oolong Tea High Mountain Oolong Tea 250g",
+    "category": "Oolong Tea",
+    "price": "$70.00",
     "images": [
-      "assets/teas/6arawpuer1.jpg",
-      "assets/teas/6arawpuer2.jpg",
-      "assets/teas/6arawpuer3.jpg",
-      "assets/teas/6arawpuer4.jpg",
-      "assets/teas/6arawpuer5.jpg"
+      "assets/teas/guihuawul1.jpg",
+      "assets/teas/guihuawul2.jpg",
+      "assets/teas/guihuawul3.jpg",
+      "assets/teas/guihuawul4.jpg"
     ],
-    "description": "Packaging: Gift box\nTea type: Xiaolongzhu Pu'er raw tea, Pu'er tea\nNet content: 1kg\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction date: April 20, 2020\nBest tasting period: The longer the better\nFood production license number: See outer packaging\nProduct standard number: See outer packaging\nTea area: Lincang tea area, Yunnan, Mainland China\n\nNo preservatives or flavors added, pure natural"
+    "description": "Packaging: Canned\nTea Type: Osmanthus Oolong Tea, Oolong\nAroma: Osmanthus, Fruity\nNet Content: 250g\nProduction Process: Ancient Kiln\nOrigin: Quanzhou City, Fujian Province, Mainland China\nProduction Date: May 3, 2025\nBest Tasting Period: 540 Days\nBest Preservation Method: Frozen\nFood Production License Number: SC114350524872\nProduct Standard Number: GB/T 30357.2\nGrade: Special Grade, 7A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, 100% natural"
   },
   {
-    "name": "2018 Xiaguan Blue Print Pu'er Raw Tea Yunnan 357g",
-    "category": "Pu'er Tea",
-    "price": "$240.00",
-    "images": [
-      "assets/teas/7axiaguan1.jpg",
-      "assets/teas/7axiaguan2.jpg",
-      "assets/teas/7axiaguan3.jpg",
-      "assets/teas/7axiaguan4.jpg",
-      "assets/teas/7axiaguan5.jpg"
-    ],
-    "description": "Packaging: cotton paper\nTea type: Xiaguan Blue Print Pu'er, Pu'er Raw Tea\nNet content: 357g\nShape: cake tea\nFragrance: high fragrance and oil-free\nOrigin: Dali, Yunnan, China\nProduction date: August 8, 2018\nTea raw material date: 2018\nBest tasting period: the longer the better\nFood production license number: SC11453080225999\nProduct standard number: GB/T22111-2008\nTea area: Lincang tea area, China\n\nAuthentic Xiaguan Blue Print Pu'er, Pu'er Raw Tea\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "China Puer Tea Palace Pu'er Xinhui Xiaoqinggan 500g",
-    "category": "Pu'er Tea",
-    "price": "$55.00",
-    "images": [
-      "assets/teas/xiaoqinggan1.jpg",
-      "assets/teas/xiaoqinggan2.jpg",
-      "assets/teas/xiaoqinggan3.jpg",
-      "assets/teas/xiaoqinggan4.jpg"
-    ],
-    "description": "Packaging: bagged\nTea: Xiaoqinggan Puer tea\nNet content: 500g\nPlace of Origin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction date: September 1, 2022\nBest tasting period: 1080 days\nFood production license number: SC11444070502968\nProduct standard number: Q/XHYC 001S\nTea Area: Menghai Tea Area in Mainland China\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2023 Tangerine Peel Pu'er Ripe Tea Pu'er Tea 250g",
-    "category": "Pu'er Tea",
-    "price": "$45.00",
-    "images": [
-      "assets/teas/chenpipuer1.jpg",
-      "assets/teas/chenpipuer2.jpg",
-      "assets/teas/chenpipuer3.jpg",
-      "assets/teas/chenpipuer4.jpg"
-    ],
-    "description": "Packaging: cotton paper\nTea type: Pu'er ripe tea, tangerine peel Pu'er tea\nNet content: 250g\nShape: cake tea\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction date: October 19, 2023\nBest tasting period: 5400 days\nFood production license number: SC114530101306856\nProduct standard number: GB/T 31751\nGrade: 5A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2022 7A Pu'er Ripe Tea Jasmine Pu'er Tea Paste, Chagao 100g",
-    "category": "Pu'er Tea",
-    "price": "$30.00",
-    "images": [
-      "assets/teas/molichagao1.jpg",
-      "assets/teas/molichagao2.jpg",
-      "assets/teas/molichagao3.jpg",
-      "assets/teas/molichagao4.jpg",
-      "assets/teas/molichagao5.jpg"
-    ],
-    "description": "Packaging: tin foil\nTea: Jasmine Pu'er Ripe Tea, Tea Paste, Pu'er Tea Paste\nNet Content: 100g\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction Date: June 20, 2022\nShelf Life: The longer the better\nFood Production License Number: SC11453011103636\nProduct Standard Number: GB/T22111-2008\nTea Area: Lincang Tea Area, Mainland China\nGrade: Special Grade 7A\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2022 7A Pu'er Ripe Tea Glutinous Pu'er Tea Paste, Glutinous Rice Fragrance Chagao 100g",
-    "category": "Pu'er Tea",
-    "price": "$30.00",
-    "images": [
-      "assets/teas/nuomichagao1.jpg",
-      "assets/teas/nuomichagao2.jpg",
-      "assets/teas/nuomichagao3.jpg",
-      "assets/teas/nuomichagao4.jpg",
-      "assets/teas/nuomichagao5.jpg"
-    ],
-    "description": "Packaging: tin foil\nTea: glutinous rice fragrant Pu'er ripe tea, tea paste, Pu'er tea paste\nNet content: 100g\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction date: June 20, 2022\nShelf life: The longer the better\nFood production license number: SC11453011103636\nProduct standard number: GB/T22111-2008\nTea area: Lincang tea area, Mainland China\nGrade: Special grade 7A\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "China Xiaguan Tuocha 2023 Puer Ripe Tea Original Box 100gx4",
-    "category": "Pu'er Tea",
-    "price": "$55.00",
-    "images": [
-      "assets/teas/xiaguantuocha1.jpg",
-      "assets/teas/xiaguantuocha2.jpg",
-      "assets/teas/xiaguantuocha3.jpg"
-    ],
-    "description": "Packaging: Bags\nTea Type: Xiaguan Tuocha, Puer Ripe Tea\nNet Content: 100g\nShape: Tuocha\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction Date: April 6, 2023\nTea Raw Material Date: 2022\nBest Tasting Period: The Longer the Better\nFood Production License Number: SC11453080225999\nProduct Standard Number: GB/T22111-2008\nTea Area: Lincang Tea Area, Mainland China\nPrice: US$55/4 Pieces\n\nAuthentic Xiaguan Tuocha, Puer Ripe Tea"
-  },
-  {
-    "name": "2008 Iceland Ripe Pu'er Loose Tea Ancient Tree Flower Fragrance Yunnan Ancient Tree Pu'er Loose Tea 500g",
-    "category": "Pu'er Tea",
-    "price": "$140.00",
-    "images": [
-      "assets/teas/huaxiangshupu1.jpg",
-      "assets/teas/huaxiangshupu2.jpg",
-      "assets/teas/huaxiangshupu3.jpg",
-      "assets/teas/huaxiangshupu4.jpg",
-      "assets/teas/huaxiangshupu5.jpg"
-    ],
-    "description": "Packaging: Bags\nTea: Pu'er Ripe Tea, Pu'er Tea\nNet Content: 500g\nShape: Loose Tea\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: December 12, 2022\nTea Raw Material Date: 2008\nBest Tasting Period: The Longer the Better\nFood Production License Number: SC11453282239625\nProduct Standard Number: GB/T22111-2008\nTea Area: Lincang Tea Area, Mainland China"
-  },
-  {
-    "name": "2022 Authentic Xiaguan Tuocha Yunnan Pu'er Raw Tea 500g",
-    "category": "Pu'er Tea",
-    "price": "$55.00",
-    "images": [
-      "assets/teas/xi2aguanjiatuo1.jpg",
-      "assets/teas/xi2aguanjiatuo2.jpg",
-      "assets/teas/xi2aguanjiatuo3.jpg",
-      "assets/teas/xi2aguanjiatuo4.jpg"
-    ],
-    "description": "Packaging: Bags\nTea Type: Xiaguan Tuocha, Pu'er Raw Tea\nNet Content: 500g\nShape: Tuocha\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction Date: April 2, 2022\nTea Raw Material Date: 2022\nBest Tasting Period: The Longer the Better\nFood Production License Number: SC11453080225999\nProduct Standard Number: GB/T22111-2008\nTea Area: Lincang Tea Area, Mainland China\n\nAuthentic Xiaguan Tuocha, Pu'er Raw Tea"
-  },
-  {
-    "name": "2002 Songpinhao Chinese Yunnan Old Ripe China Health 250g",
-    "category": "Pu'er Tea",
-    "price": "$20.00",
-    "images": [
-      "assets/teas/songph1.jpg",
-      "assets/teas/songph2.jpg",
-      "assets/teas/songph3.jpg",
-      "assets/teas/songph4.jpg",
-      "assets/teas/songph5.jpg",
-      "assets/teas/songph6.jpg",
-      "assets/teas/songph7.jpg"
-    ],
-    "description": "Packaging: cotton paper\nTea: Pu'er ripe tea, Pu'er tea\nNet content: 250g\nShape: brick tea\nOrigin: Xishuangbanna Dai Autonomous Prefecture, Yunnan Province, Mainland China\nProduction date: 2002\nTea raw material date: 2000\nBest tasting period: the longer the better\nFood production license number: SC11453282239625\nProduct standard number: GB/T22111-2008\nTea area: Lincang tea area, Mainland China"
-  },
-  {
-    "name": "2025 8A Fengqing Yunnan Red Camel Hump Yunnan Black Tea Yunnan Red Tuofeng 250g",
+    "name": "2025 Fengqing Dianhong Yunnan Wilderness Ancient Tree Flower and Fruit Fragrance Dianhong Tea 400g",
     "category": "Black Tea",
-    "price": "$90.00",
+    "price": "$130.00",
     "images": [
-      "assets/teas/8adianhongtuof1.jpg",
-      "assets/teas/8adianhongtuof2.jpg",
-      "assets/teas/8adianhongtuof3.jpg",
-      "assets/teas/8adianhongtuof4.jpg"
+      "assets/teas/8afengqing1.jpg",
+      "assets/teas/8afengqing2.jpg",
+      "assets/teas/8afengqing3.jpg",
+      "assets/teas/8afengqing4.jpg",
+      "assets/teas/8afengqing5.jpg"
     ],
-    "description": "Packaging: Canned\nTea Type: Dianhong Camel Hump, Black Tea\nNet Content: 250g\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: April 15, 2025\nBest Tasting Period: 730 Days\nFood Production License Number: SC11435062404129\nProduct Standard Number: GB/T 30357.2\nGrade: Special Grade, 8A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 7A Jasmine Dianhong Black Tea Luzhou Fragrance 100g",
-    "category": "Black Tea",
-    "price": "$35.00",
-    "images": [
-      "assets/teas/7ajasminedh1.jpg",
-      "assets/teas/7ajasminedh2.jpg",
-      "assets/teas/7ajasminedh3.jpg",
-      "assets/teas/7ajasminedh4.jpg",
-      "assets/teas/7ajasminedh5.jpg"
-    ],
-    "description": "Packaging: Canned\nTea Types: Jasmine Dianhong, Black Tea\nNet Content: 100g\nOrigin: Chengdu, Sichuan Province, Mainland China\nProduction Date: December 31, 2025\nShelf Life: 540 Days\nFood Production License Number: SC11435078206277\nProduct Standard Number: GB/T 18745\nGrade: Special Grade 7A\n\nNote: The outer packaging of tea may be updated, and the production date is subject to the packaging date."
-  },
-  {
-    "name": "2025 5A Lapsang Souchong Smoked Zhengshan Xiaozhong Chinese Black Tea 250g",
-    "category": "Black Tea",
-    "price": "$40.00",
-    "images": [
-      "assets/teas/5azsxz1.jpg",
-      "assets/teas/5azsxz2.jpg",
-      "assets/teas/5azsxz3.jpg",
-      "assets/teas/5azsxz4.jpg",
-      "assets/teas/5azsxz5.jpg"
-    ],
-    "description": "Packaging: Bags\nTea Type: Zhengshan Xiaozhong, Black Tea\nFragrance: Strong Fragrance\nNet Content: 250g\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: April 10, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\nTea Area: Lincang Tea Area, Yunnan Province\nGrade: Special Grade 5A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 8A Lapsang Souchong Smoked Flavor Chinese Black Tea 250g",
-    "category": "Black Tea",
-    "price": "$110.00",
-    "images": [
-      "assets/teas/8azsxz1.jpg",
-      "assets/teas/8azsxz2.jpg",
-      "assets/teas/8azsxz3.jpg",
-      "assets/teas/8azsxz4.jpg",
-      "assets/teas/8azsxz5.jpg"
-    ],
-    "description": "Packaging: Canned\nTea Type: Zhengshan Xiaozhong, Black Tea\nFragrance: Smoky\nNet Content: 250g\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: April 10, 2025\nBest Tasting Period: 540 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\nTea Area: Lincang Tea Area, Yunnan Province\nGrade: Special Grade 8A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 Yunnan Golden Needle Bud Cake Tea Fengqing Dianhong Tea Honey Fragrance 200g",
-    "category": "Black Tea",
-    "price": "$50.00",
-    "images": [
-      "assets/teas/miyun1.jpg",
-      "assets/teas/miyun2.jpg",
-      "assets/teas/miyun3.jpg",
-      "assets/teas/miyun4.jpg"
-    ],
-    "description": "Packaging: cotton paper\nTea type: Fengqing Dianhong Golden Bud Cake, Black Tea\nAroma: Honey Aroma\nNet Content: 200g\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: May 13, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: See Packaging\nProduct Standard Number: See Packaging\nTea Area: Lincang Tea Area, Yunnan Province\nGrade: Special Grade 6A\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 Osmanthus Black Tea Wuyishan Zhengshan Xiaozhong Black Tea 250g",
-    "category": "Black Tea",
-    "price": "$65.00",
-    "images": [
-      "assets/teas/guihuah1.jpg",
-      "assets/teas/guihuah2.jpg",
-      "assets/teas/guihuah3.jpg",
-      "assets/teas/guihuah4.jpg"
-    ],
-    "description": "Packaging: Canned\nTea Type: Osmanthus Black Tea, Zhengshan Xiaozhong, Black Tea\nFragrance: Strong Fragrance\nNet Content: 250g\nProcess: Xiaozhong Black Tea\nOrigin: Nanping City, Fujian Province, Mainland China\nProduction Date: May 3, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\nGrade: Special Grade 7A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 3A Jinjunmei Honey-Flavored Black Tea 250g",
-    "category": "Black Tea",
-    "price": "$9.00",
-    "images": [
-      "assets/teas/3ajinjunmei1.jpg",
-      "assets/teas/3ajinjunmei2.jpg",
-      "assets/teas/3ajinjunmei3.jpg",
-      "assets/teas/3ajinjunmei4.jpg",
-      "assets/teas/3ajinjunmei5.jpg"
-    ],
-    "description": "Packaging: Bags\nTea Type: Jinjunmei, Black Tea\nFragrance Type: Honey-Flavored Aroma\nNet Content: 250g\nOrigin: Nanping City, Fujian Province, Mainland China\nProduction Date: May 13, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\nGrade: 3A\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 3A Dian Hong Black Chinese Tea Yunnan Dianhong Tea 250g",
-    "category": "Black Tea",
-    "price": "$9.50",
-    "images": [
-      "assets/teas/3adianhong1.jpg",
-      "assets/teas/3adianhong2.jpg",
-      "assets/teas/3adianhong3.jpg",
-      "assets/teas/3adianhong4.jpg",
-      "assets/teas/3adianhong5.jpg",
-      "assets/teas/3adianhong6.jpg"
-    ],
-    "description": "Packaging: Bags\nTea Type: Dianhong, Black Tea\nFragrance: Rich taste and strong aroma\nNet Content: 250g\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: May 13, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078207607\nProduct Standard Number: GB/T1229\nTea Area: Lincang Tea Area, Yunnan Province\nGrade: 3A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
-  },
-  {
-    "name": "2025 3A Lapsang Souchong Zhengshan Xiaozhong Chinese Black Tea 250g",
-    "category": "Black Tea",
-    "price": "$10.00",
-    "images": [
-      "assets/teas/3azsxz1.jpg",
-      "assets/teas/3azsxz2.jpg",
-      "assets/teas/3azsxz3.jpg",
-      "assets/teas/3azsxz4.jpg",
-      "assets/teas/3azsxz5.jpg"
-    ],
-    "description": "Packaging: Bags\nTea Type: Zhengshan Xiaozhong, Black Tea\nFragrance: Strong Fragrance\nNet Content: 250g\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: April 10, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\nTea Area: Lincang Tea Area, Yunnan Province\nGrade: 3A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
+    "description": "Packaging: Boxed\nTea Type: Fengqing Dianhong, Ancient Tree, Black Tea\nNet Content: 400g\nFragrance: Floral and Fruity\nOrigin: Lincang City, Yunnan Province, Mainland China\nProduction Date: April 15, 2025\nBest Tasting Period: 730 Days\nFood Production License Number: SC11435062404129\nProduct Standard Number: GB/T 30357.2\nGrade: Special Grade, 8A\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
   },
   {
     "name": "2025 Keemun Black Tea, Keemun Xiangluo, Chinese Black Tea 300g",
     "category": "Black Tea",
     "price": "$90.00",
     "images": [
-      "assets/teas/qihongluo1.jpg",
-      "assets/teas/qihongluo2.jpg",
-      "assets/teas/qihongluo3.jpg",
-      "assets/teas/qihongluo4.jpg"
+      "assets/teas/6aqimenluo1.jpg",
+      "assets/teas/6aqimenluo2.jpg",
+      "assets/teas/6aqimenluo3.jpg",
+      "assets/teas/6aqimenluo4.jpg"
     ],
-    "description": "Packaging: Canned\nTea: Qimen Black Tea, Qimen Xiangluo, Black Tea\nNet Content: 300g\nFragrance: Honey fragrance, strong fragrance\nOrigin: Huangshan City, Anhui Province, Mainland China\nProduction Date: February 29, 2025\nShelf Life: 1800 Days\nFood Production License Number: SC11434102405453\nProduct Standard Number: Q/QHC 0001S\nGrade: Special Grade, 7A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
+    "description": "Packaging: Canned\nTea: Qimen Black Tea, Qimen Conch, Black Tea\nNet Content: 300g\nFragrance: Honey Fragrance, Strong Fragrance\nOrigin: Huangshan City, Anhui Province, Mainland China\nProduction Date: February 29, 2025\nShelf Life: 1800 Days\nFood Production License Number: SC11434102405453\nProduct Standard Number: Q/QHC 0001S\nGrade: Special Grade, 7A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
   },
   {
-    "name": "2025 8A GABA Tea Anaerobic Fermented Oolong Tea Jiaba Tea 500g",
-    "category": "Oolong Tea",
-    "price": "$180.00",
+    "name": "2025 Rose Black Tea for Weight Loss and Beauty 50g",
+    "category": "Flower Tea",
+    "price": "$20.00",
     "images": [
-      "assets/teas/8agaba1.jpg",
-      "assets/teas/8agaba2.jpg",
-      "assets/teas/8agaba3.jpg",
-      "assets/teas/8agaba4.jpg"
+      "assets/teas/meiguihua1.jpg",
+      "assets/teas/meiguihua2.jpg",
+      "assets/teas/meiguihua3.jpg",
+      "assets/teas/meiguihua4.jpg",
+      "assets/teas/meiguihua5.jpg"
     ],
-    "description": "Packaging: Bags\nTea Type: GABA Oolong Tea, Fermented Tea, Oolong Tea, Organic Tea\nAroma: Honey aroma with a sour taste\nNet Content: 500g\nOrigin: Nantou County, Taiwan Province, China\nProduction Date: March 21, 2025\nBest Tasting Period: 730 Days\nBest Preservation Method: Frozen\nFood Production License Number: SC11435062701031\nProduct Standard Number: GB/T 30357.2\nGrade: Special Grade, 8A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, 100% natural"
+    "description": "Packaging: Canned\nTea Type: Rose Black Tea, Black Tea, Flower Tea\nNet Content: 50g\nFragrance: Strong Fragrance\nOrigin: Mainland China\nProduction Date: April 17, 2025\nBest Tasting Period: 540 Days\nFood Production License Number: SC11435021203109\nProduct Standard Number: Q/XHSL 0003S\nGrade: 5A\n\nNote: The product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
   },
   {
-    "name": "2025 3A Milk Oolong Tea Beauty Weight Loss High Mountains JinXuan 250g",
-    "category": "Oolong Tea",
-    "price": "$7.99",
+    "name": "2012 6A Fuding Old White Tea Old Shoumei Aged Old White Tea Loose Tea 250g",
+    "category": "White Tea",
+    "price": "$60.00",
     "images": [
-      "assets/teas/3amilk1.jpg",
-      "assets/teas/3amilk2.jpg",
-      "assets/teas/3amilk3.jpg",
-      "assets/teas/3amilk4.jpg",
-      "assets/teas/3amilk5.jpg"
+      "assets/teas/6afuding1.jpg",
+      "assets/teas/6afuding2.jpg",
+      "assets/teas/6afuding3.jpg"
     ],
-    "description": "Packaging: Bagged\nTea: Milk Oolong, Oolong Tea\nNet Content: 250g\nOrigin: Quanzhou, Fujian Province, Mainland China\nProduction Date: April 10, 2025\nShelf Life: 540 Days\nFood Production License Number: SC11435062404129\nProduct Standard Number: GB/T 30357.2\nGrade: Special Grade, 3A\n\nNote: The outer packaging of the product may be updated, and the actual delivery shall prevail. The production date is based on the product packaging date.\n\nNo added preservatives or flavors, purely natural"
+    "description": "Packaging: Bags\nTea Type: Fuding Old White Tea, White Tea\nNet Content: 250g\nFragrance: Medicinal Fragrance, Date Fragrance\nOrigin: Quanzhou City, Fujian Province, Mainland China\nProduction Date: August 1, 2023\nTea Raw Material Date: 2012\nBest Tasting Period: 5475 Days\nFood Production License Number: SC11435052403878\nProduct Standard Number: GB/T 22291\nGrade: Special Grade, 6A\n\nNote: Product packaging may be updated, subject to actual delivery, and the production date is subject to the product packaging date.\n\nNo preservatives or flavors added, pure natural"
   },
   {
-    "name": "2025 3A Tieguanyin Anxi Oolong Tea Tiekuanyin Green Tea 250g",
-    "category": "Oolong Tea",
-    "price": "$7.99",
+    "name": "2025 16 Pieces Blooming Tea Handmade Flower Tea 140g",
+    "category": "Flower Tea",
+    "price": "$16.00",
     "images": [
-      "assets/teas/3atieguany1.jpg",
-      "assets/teas/3atieguany2.jpg",
-      "assets/teas/3atieguany3.jpg",
-      "assets/teas/3atieguany4.jpg"
+      "assets/teas/16pflower1.jpg",
+      "assets/teas/16pflower2.jpg",
+      "assets/teas/16pflower3.jpg",
+      "assets/teas/16pflower4.jpg",
+      "assets/teas/16pflower5.jpg",
+      "assets/teas/16pflower6.jpg"
     ],
-    "description": "Packaging: Bags\nTea Type: Tieguanyin, Oolong Tea\nFragrance: Light Fragrance\nNet Content: 250g\nOrigin: Quanzhou City, Fujian Province, Mainland China\nProduction Date: April 30, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078206275\nProduct Standard Number: GB/T 18745\nGrade: 3A\n\nNote: The outer packaging of the product may be updated, and the actual delivery shall prevail. The production date shall be subject to the outer packaging date of the product.\n\nNo added preservatives or flavors, purely natural"
+    "description": "Packaging: Bags\nTea Types: Flower Tea\nNet Content: About 140g\nOrigin: Fuzhou Province, Mainland China\nProduction Date: March 18, 2025\nBest Tasting Period: 720 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\n\nWhat is scented tea? Scented tea is made from green tea buds and edible dried flowers. Pour hot water into a glass for one or two minutes, and the round tea balls bloom into beautiful flowers. Natural, healthy and fashionable.\n\nNote: The outer packaging of the product may be updated, and the actual delivery shall prevail. The production date shall be subject to the outer packaging date of the product.\n\nNo added preservatives, flavors, purely natural"
   },
   {
-    "name": "2025 Ginseng Oolong Tea Taiwan Ginseng Tea for Sliming and Health 250g",
-    "category": "Oolong Tea",
-    "price": "$7.99",
+    "name": "2025 Golden Chrysanthemum Tea 30packs",
+    "category": "Flower Tea",
+    "price": "$25.00",
     "images": [
-      "assets/teas/3aginsneg1.jpg",
-      "assets/teas/3aginsneg2.jpg",
-      "assets/teas/3aginsneg3.jpg",
-      "assets/teas/3aginsneg4.jpg",
-      "assets/teas/3aginsneg5.jpg"
+      "assets/teas/jinsihuangj1.jpg",
+      "assets/teas/jinsihuangj2.jpg",
+      "assets/teas/jinsihuangj3.jpg",
+      "assets/teas/jinsihuangj4.jpg"
     ],
-    "description": "Packaging: Bag\nTea Type: Ginseng, Oolong Tea\nNet Content: 250g\nOrigin: Quanzhou City, Fujian Province, Mainland China\nProduction Date: April 30, 2025\nBest Tasting Period: 1080 Days\nFood Production License Number: SC11435078206275\nProduct Standard Number: GB/T 18745\nGrade: 3A\n\nNote: The outer packaging of the product may be updated, and the actual delivery shall prevail. The production date shall be subject to the outer packaging date of the product.\n\nNo added preservatives or flavors, purely natural"
+    "description": "Packaging: Boxed\nTea Types: Chrysanthemum Tea, Scented Tea\nNet Content: 30 Packs\nOrigin: Jiujiang City, Jiangxi Province, Mainland China\nProduction Date: March 18, 2025\nBest Tasting Period: 720 Days\nFood Production License Number: SC11435078207007\nProduct Standard Number: GB/T1228\n\nNote: The outer packaging of the product may be updated, and the actual delivery shall prevail. The production date shall be subject to the outer packaging date of the product.\n\nNo added preservatives, flavors, purely natural"
+  },
+  {
+    "name": "2025 Authentic Rum Raspberry Fruit Flower Tea Strawberry Blueberry Rose Roselle 400g",
+    "category": "Fruit Tea",
+    "price": "$60.00",
+    "images": [
+      "assets/teas/shuiguolm1.jpg",
+      "assets/teas/shuiguolm2.jpg",
+      "assets/teas/shuiguolm3.jpg",
+      "assets/teas/shuiguolm4.jpg"
+    ],
+    "description": "Packaging: Canned\nTea Type: Fruit Tea\nNet Content: 400g\nOrigin: Anhui Province, Mainland China\nProduction Date: July 20, 2025\nBest Tasting Period: 540 Days\nFood Production License Number: SC11435062404129\nProduct Standard Number: GB/T 30357.2\nGrade: Special Grade, 5A\n\nRich in minerals, fruit acid, anthocyanin, carotene, vitamins, vitamin C, amino acids, etc.\n\nNo preservatives or flavors added, pure natural"
   }
-]
-]
 ]
